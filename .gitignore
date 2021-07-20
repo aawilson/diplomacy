@@ -1,0 +1,13 @@
+/_build/
+/cover/
+/deps/
+/doc/
+/.fetch
+erl_crash.dump
+*.ez
+diplomacy-*.tar
+/tmp
+parser.out
+parsetab.py
+*.sublime-project
+__pycache__/
