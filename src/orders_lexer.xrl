@@ -7,6 +7,7 @@ Rules.
 
 [-{EN_DASH}{EM_DASH}]                        : {token, {'-', TokenLine}}.
 [,;](\n)*                                    : {token, {separator, TokenLine}}.
+\n+                                          : {token, {separator, TokenLine}}.
 ([hH]([oO][lL][dD])?)                        : {token, {hold, TokenLine}}.
 ([sS]([uU][pP][pP][oO][rR][tT])?)            : {token, {support, TokenLine}}.
 ([cC]([oO][nN][vV][oO][yY])?)                : {token, {convoy, TokenLine}}.

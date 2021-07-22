@@ -105,4 +105,18 @@ defmodule OrdersLexerTest do
         {:territory, 1, 'Spa/nc'},
       ], 1}
   end
+
+  test "lexes newline separator" do
+    assert :orders_lexer.string('\n') == {:ok,
+      [
+        {:separator, 1},
+      ], 2}
+  end
+
+  test "lexes semicolon separator" do
+    assert :orders_lexer.string(';') == {:ok,
+      [
+        {:separator, 1},
+      ], 1}
+  end
 end
